@@ -33,7 +33,7 @@ public class Job {
 
     @Override
     public String toString() {
-            return "\n" + "ID: " + this.getId() +
+            return "\nID: " + this.getId() +
                     "\nName: " + this.getName() +
                     "\nEmployer: " + this.getEmployer() +
                     "\nLocation: " + this.getLocation() +

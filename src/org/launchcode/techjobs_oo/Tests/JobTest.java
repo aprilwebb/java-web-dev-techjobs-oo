@@ -46,7 +46,7 @@ public class JobTest {
     public void testToStringPrintsBlankLines(){
         job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
-            assertEquals("\n" + job1 + "\n", "\n" + job1.toString() + "\n");
+            assertEquals("" + job1, job1.toString());
     }
 
     @Test
