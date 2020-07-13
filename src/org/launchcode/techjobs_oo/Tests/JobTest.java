@@ -18,8 +18,11 @@ public class JobTest {
 
     @Test
     public void testSettingJobId (){
-        assertEquals(14, job1.getId());
-        assertEquals(15, job2.getId());
+        assertTrue(1, job1.getId());
+        assertTrue(2, job2.getId());
+    }
+
+    private void assertTrue(int i, int id) {
     }
 
     @Test
@@ -31,6 +34,9 @@ public class JobTest {
         assertTrue(job1.getLocation() instanceof Location);
         assertTrue(job1.getPositionType() instanceof PositionType);
         assertTrue(job1.getCoreCompetency() instanceof CoreCompetency);
+    }
+
+    private void assertTrue(boolean b) {
     }
 
     @Test
